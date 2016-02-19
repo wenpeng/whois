@@ -31,3 +31,23 @@ array(
 );
 
 ```
+#示例
+```php
+$whois = new Whois;
+
+$query = $whois->query('v2ex.com', 3); 
+
+var_dump($query);
+
+array(
+    'error' => 0,
+    'data' => array(
+        'domain' => 'v2ex.com',
+        'registration' => 'registered',
+        'registrar' => 'TUCOWS DOMAINS INC.',
+        'creation' => '1119542400',
+        'expiration' => '1466697600',
+        'status' => 'clientTransferProhibited',
+    )
+);
+```
